@@ -22,7 +22,7 @@ checking the status of the docker
 service docker status
 
 getting to user mode
-usermod -aG docker u
+usermod -aG docker ubuntu
 
 checking the version of the docker	
 docker --version
