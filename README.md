@@ -188,7 +188,7 @@ docker image rm replace image id
 ```
 #### =========================END of LAB-02=========================
 
-## Lab 3: Docker container life cycle and Working with volume mounts in Docker
+## Lab 3: Docker container life cycle 
 
 ### Task 1: Docker Lifecycle 
 
