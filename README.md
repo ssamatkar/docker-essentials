@@ -366,7 +366,7 @@ Press Ctrl+P+Q, to switch back to Host
 
 Running ubuntu container and renaming it has container2 in interactive mode((-it) means getting into primary shell) and mounting source location to destination location
 ```
-docker run -it --name container2 -v /home/ubuntu/share:/var/www/html ubuntu:18.04
+docker run -it --name container2 -v /home/ubuntu/share:/var/www/html ubuntu:18.04 bash
 ```
 Adding the text(Hello From Container2) to /var/www/html/index.html
 ```
