@@ -732,7 +732,6 @@ vi Dockerfile
 Content of Dockerfile to paste
 ```
 FROM ubuntu:20.04
-MAINTAINER ADMIN "admin@cloudthat.com"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
 apt-get -q -y install apache2 \
