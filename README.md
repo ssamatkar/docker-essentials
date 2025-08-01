@@ -140,7 +140,7 @@ docker ps -a
 
 Running httpd container in background and not getting attached to the shell (-d) and port mapping(-p)
 ```
-docker run -d -p 80:80 httpd
+docker run -d --name web-app -p 80:80 httpd
 ```
 Checking containers which are in running state
 ```
@@ -148,7 +148,7 @@ docker ps
 ```
 Getting into secondary shell(exec)
 ```
-docker exec -it replace container id/name /bin/bash
+docker exec -it web-app /bin/bash
 ```
 ```
 exit
@@ -159,7 +159,7 @@ docker ps
 ```
 Getting into secondary shell(exec)
 ```
-docker exec -it replace container id/name /bin/bash
+docker exec -it web-app /bin/bash
 ```
 Terminating your container
 ```
@@ -172,11 +172,11 @@ docker ps -a
 
 To stop the container
 ```
-docker container stop replace container id/name 
+docker container stop web-app
 ```
 To Remove the container
 ```
-docker container rm  replace container id/name 
+docker container rm  web-app
 ```
 To check the image in local repository
 ```
